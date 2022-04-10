@@ -14,12 +14,7 @@ async def root():
     "Hi! Welcome to the BMI Calculator"
     "message": "BMI or Body Mass Index is a measure of body fat based on height and weight that applies to adult men and women.",
     "height": "Please provide your height in Meters, e.g. 1.5",
-    "weight": "Please provide your weight in Kilograms",
-    "morbidlyObese": "CAUTION! You are MORBIDLY OBESE. Please go see a doctor",
-    "obese": "You are OBESE. Please go see a doctor",
-    "overWeight": "You are OVERWEIGHT. A little bit of exercise would be good for you",
-    "normalWeight": "You are within NORMAL WEIGHT range! Way to go!",
-    "underWeight": "Oh dear. You need to bulk up a little. You are UNDERWEIGHT"
+    "weight": "Please provide your weight in Kilograms"
   }
 
 @app.get("/api/bmi/")
