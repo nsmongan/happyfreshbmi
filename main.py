@@ -32,33 +32,33 @@ async def calculatebmi(height: float = Query(None, gt=0), weight: float = Query 
       content={
         "bmi": bmi,
         "label": "CAUTION! You are MORBIDLY OBESE. Please go see a doctor",
-        }.
+        },
       status_code=200)
   elif bmi >= 30.0 and bmi < 39.9:
     return JSONResponse(
       content={
         "bmi": bmi,
         "label": "You are OBESE. Please go see a doctor",
-        }.
+        },
       status_code=200)
   elif bmi >= 25.0 and bmi < 29.9:
     return JSONResponse(
       content={
         "bmi": bmi,
         "label": "You are OVERWEIGHT. A little bit of exercise would be good for you",
-        }.
+        },
       status_code=200)
   elif bmi >= 18.5 and bmi < 24.9:
     return JSONResponse(
       content={
         "bmi": bmi,
         "label": "You are within NORMAL WEIGHT range! Way to go!",
-        }.
+        },
       status_code=200)
   elif bmi < 18.5:
     return JSONResponse(
       content={
         "bmi": bmi,
         "label": "Oh dear. You need to bulk up a little. You are UNDERWEIGHT",
-        }.
+        },
       status_code=200)
